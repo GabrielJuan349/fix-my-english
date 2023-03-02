@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Textarea from '../components/Textarea.svelte';
+import ButtonSubmit from '../components/ButtonSubmit.svelte';
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="container max-w-lg m-auto flex flex-col">
+		<header class="py-4">
+			<h1 class="text-3xl font-bold">Fix my english! 🇬🇧  </h1>
+		</header>
+		
+		
+        <div class="flex flex-col gap-y-2">
+            <Textarea client:visible />
+            <ButtonSubmit client:visible />
+        </div>
+	</main>
+</Layout>
+
